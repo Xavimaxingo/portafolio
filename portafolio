@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <style>
+         /* Estilos para la tienda */
+         .shop-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product-box {
+            width: 300px; /* Ancho del producto */
+            margin: 10px; /* Espacio entre productos */
+            text-align: center;
+        }
+
+        .product-img {
+            width: 100%;
+            height: auto;
+        }
+
+
+
+
+
+
+
+        /* Estilos Generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #70C1B3, #ffffff);
+            color: #111;
+        }
+
+        /* Estilos para Encabezados */
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para Secciones */
+        section {
+            padding: 50px 0;
+        }
+
+        /* Estilos para Enlaces de Navegación */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #111;
+            padding: 5px 10px;
+            border: 2px solid #111;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #111;
+            color: #fff;
+        }
+
+        /* Estilos para Botones */
+        .boton {
+            display: inline-block;
+            padding: 7px 15px;
+            background-color: #fff;
+            color: #111;
+            text-decoration: none;
+            border: 2px solid #111;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+
+        .boton:hover {
+            background-color: #111;
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px; /* Ancho máximo del contenido */
+            margin: 0 auto; /* Centrado horizontal */
+            padding: 20px; /* Margen interno */}
+        
+    </style>    
+</head>
+<body><div class="container">
+    
+
+<!-- Página de Inicio -->
+<section id="inicio">
+    <h1>Bienvenido a mi Portafolio</h1>
+  <center>  <p>Aquí encontrarás información sobre mí, mis proyectos y cómo contactarme.</p></center>
+    <nav>
+        <ul>
+            <li><a  class="boton" href="#experiencia">Experiencia</a></li>
+            <li><a  class="boton" href="#proyectos">Proyectos</a></li>
+            <li><a  class="boton" href="#sobre-mi">Sobre mí</a></li>
+            <li><a  class="boton" href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</section>
+
+<!-- Experiencia -->
+<section id="experiencia">
+    <h2>Experiencia en Desarrollo</h2>
+    En mi trayectoria universitaria he estudiado Entornos Virtuales y Negocios Digitales en la Universidad Tecnológica Metropolitana. Además, he participado en actividades extracurriculares relevantes y realizado colaboraciones en el área de Realidad Virtual Y Realidad Aumentada. Estas experiencias han fortalecido mis habilidades y me han preparado para enfrentar los desafíos profesionales con confianza. Estoy emocionado por continuar creciendo y aprendiendo en mi trayectoria universitaria y estoy seguro de que mi formación académica y experiencias me han preparado bien para enfrentar los desafíos futuros en mi carrera.
+</section>
+
+<!-- Proyectos -->
+<section id="proyectos">
+    <h2>Proyectos</h2>
+    <center><h3>animaciones y diseños</h3></center>
+        <div class="shop-content">
+        <div class="product-box">
+            <img src="pub/tlacua.png" class="product-img">
+        </div>
+        <div class="product-box">
+            <img src="pub/pai.png" class="product-img">
+        </div>
+        
+        <div class="product-box">
+            <img src="pub/col.png" class="product-img">
+        </div>
+        <!-- Agrega más productos aquí -->
+    </div>
+    <div class="relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]"> <div class="relative pb-12 md:col-span-2"> <div class="sticky top-0"> <span class="text-yellow-400 -left-[42px] absolute rounded-full text-5xl">•</span> <h3 class="text-xl font-bold text-yellow-400"> Aprendiendo nuevas</h3> <h4 class="font-semibold text-xl text-gray-600 dark:text-white">Tecnologías</h4> <time class="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">Actualmente...</time> </div> </div> <div class="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3"> Actualmente estoy explorando tecnologías en las que confío tendrán un gran impacto a largo plazo.  </div> </div>
+    <!-- Aquí puedes agregar una galería de proyectos con animaciones -->
+    <!-- Al final de esta sección, puedes agregar el botón de redireccionamiento -->
+   <center> <a href="https://gaspar-valdez.itch.io/yucatour-vr" class="boton">Ver más proyectos</a></center>
+</section>
+
+<!-- Sobre Mí -->
+<section id="sobre-mi">
+    <h2>Sobre Mí</h2>
+    <!-- Aquí puedes agregar información sobre ti -->
+</section>
+
+<!-- Contacto -->
+<section id="contacto"><h2>Contacto</h2>
+    <p>¿Quieres contactarme? Puedes hacerlo de las siguientes maneras:</p>
+    <ul><center>
+        <a class="boton" href="tel:+5520446252">Llámame</a> <!-- Enlace para llamar -->
+        <a class="boton" href="22050075@alumno.utmetropolitana.edu.mx">correo electrónico (intitucional)</a><!-- Enlace para enviar un correo electrónico -->
+        <a class="boton" href="xvmxng@gmail.com">correo electrónico (personal)</a><!-- Enlace para enviar un correo electrónico -->
+    </center>
+    </ul>
+</section>
+</div>
+
+</body>
+</html>
