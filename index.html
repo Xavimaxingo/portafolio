@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">-->
     <style>
          /* Estilos para la tienda */
          .shop-content {
@@ -22,6 +23,57 @@
             width: 100%;
             height: auto;
         }
+       
+
+        /* Estilos para las imágenes fluidas */
+        .img-fluid {
+            max-width: 100%; /* Ajusta la imagen al ancho del contenedor padre */
+            height: auto; /* Permite que la altura se ajuste automáticamente */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #709bc1, #ffffff);
+            color: #666666;
+        }
+
+        /* Estilos para la tarjeta Pokémon */
+        .card-pokemon {
+            background-color:  #709bc1; /* Fondo blanco */
+            border: 2px solid #666666; /* Borde negro */
+            border-radius: 10px; /* Bordes redondeados */
+            padding: 20px; /* Espaciado interno */
+            margin: 20px; /* Margen externo */
+            max-width: 300px; /* Ancho máximo */
+            
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+        }
+
+        /* Estilos para la imagen de perfil */
+        .card-img {
+            width: 250px; /* Ancho de la imagen */
+            margin-bottom: 10px; /* Margen inferior */
+            border: 4px solid #666666; /* Borde negro */
+           
+        }
+
+        /* Estilos para el texto dentro de la tarjeta */
+        .card-title {
+            margin-bottom: 5px; /* Margen inferior */
+        }
+
+        .card-text {
+            margin-bottom: 20px; /* Margen inferior */
+        }
+
+        .socials {
+            font-size: 24px; /* Tamaño de la fuente */
+        }
+
+        .socials i {
+            margin: 0 5px; /* Margen horizontal entre los iconos */
+        }
 
 
 
@@ -34,7 +86,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #70C1B3, #ffffff);
+            background: linear-gradient(to bottom, #709bc1, #ffffff);
             color: #111;
         }
 
@@ -65,13 +117,13 @@
             text-decoration: none;
             color: #111;
             padding: 5px 10px;
-            border: 2px solid #111;
+            border: 2px solid #666666;
             border-radius: 20px;
             transition: all 0.3s ease;
         }
 
         nav ul li a:hover {
-            background-color: #111;
+            background-color: #666666;
             color: #fff;
         }
 
@@ -91,9 +143,18 @@
         .boton:hover {
             background-color: #111;
             color: #fff;
-        }
-        .container {
-            max-width: 1200px; /* Ancho máximo del contenido */
+        }.container {
+    max-width: 1100px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 20px; /* Margen interno */
+    border: 4px solid #fff; /* Borde sólido negro */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+            .letras
+            {
+            max-width: 400%; /* Ancho máximo del contenido */
             margin: 0 auto; /* Centrado horizontal */
             padding: 20px; /* Margen interno */}
         
@@ -117,7 +178,7 @@
 </section>
 
 <!-- Experiencia -->
-<section id="experiencia">
+<section id="experiencia" class="letras">
     <h2>Experiencia en Desarrollo</h2>
     En mi trayectoria universitaria he estudiado Entornos Virtuales y Negocios Digitales en la Universidad Tecnológica Metropolitana. Además, he participado en actividades extracurriculares relevantes y realizado colaboraciones en el área de Realidad Virtual Y Realidad Aumentada. Estas experiencias han fortalecido mis habilidades y me han preparado para enfrentar los desafíos profesionales con confianza. Estoy emocionado por continuar creciendo y aprendiendo en mi trayectoria universitaria y estoy seguro de que mi formación académica y experiencias me han preparado bien para enfrentar los desafíos futuros en mi carrera.
 </section>
@@ -125,41 +186,108 @@
 <!-- Proyectos -->
 <section id="proyectos">
     <h2>Proyectos</h2>
-    <center><h3>animaciones y diseños</h3></center>
+    <center><h3>Animaciones y Diseños (Personajes 3D y Paginas web)</h3></center>
+    <center><h3>ropa ecenarios y animaciones </h3></center>
         <div class="shop-content">
         <div class="product-box">
-            <img src="tlacua.png" class="product-img">
+            <img src="pub/dis.png" class="product-img">
         </div>
         <div class="product-box">
-            <img src="pai.png" class="product-img">
+            <img src="pub/dis1.png" class="product-img">
         </div>
         
         <div class="product-box">
-            <img src="col.png" class="product-img">
+            <img src="pub/dis2.png" class="product-img">
         </div>
-        <!-- Agrega más productos aquí -->
     </div>
-    <div class="relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]"> <div class="relative pb-12 md:col-span-2"> <div class="sticky top-0"> <span class="text-yellow-400 -left-[42px] absolute rounded-full text-5xl">•</span> <h3 class="text-xl font-bold text-yellow-400"> Aprendiendo nuevas</h3> <h4 class="font-semibold text-xl text-gray-600 dark:text-white">Tecnologías</h4> <time class="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">Actualmente...</time> </div> </div> <div class="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3"> Actualmente estoy explorando tecnologías en las que confío tendrán un gran impacto a largo plazo.  </div> </div>
-    <!-- Aquí puedes agregar una galería de proyectos con animaciones -->
-    <!-- Al final de esta sección, puedes agregar el botón de redireccionamiento -->
-   <center> <a href="https://gaspar-valdez.itch.io/yucatour-vr" class="boton">Ver más proyectos</a></center>
+    <center>Este segmento de mi portafolio abarca una variedad de creaciones en el mundo de la animación y el diseño. Desde la conceptualización de personajes en 3D hasta la creación de cautivadoras animaciones, este conjunto de trabajos refleja mi pasión por dar vida a ideas a través del movimiento y la creatividad visual. Explora un universo de ropajes, escenarios y animaciones que te transportarán a mundos imaginarios y experiencias visuales únicas.</center>
+    <center><h3>Diseño de paginas web (Estilos y Vistas ) </h3></center>
+    <div class="shop-content">
+        
+    
+        <!-- Agrega más productos aquí -->
+        <div class="product-box">
+            <img src="pub/cap.png" class="product-img">
+        </div>
+        <div class="product-box">
+            <img src="pub/cap2.png" class="product-img">
+        </div>
+        
+        <div class="product-box">
+            <img src="pub/cap1.png" class="product-img">
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+    <center>Proyectos de Animación y Diseño
+
+        Este segmento de mi portafolio se centra en la creación de experiencias visuales cautivadoras a través del diseño de páginas web animadas. Desde la conceptualización de interfaces hasta la implementación de elementos dinámicos, estos trabajos reflejan mi dedicación a crear sitios web que no solo sean funcionales, sino también visualmente atractivos y memorables. Explora un universo de diseño web donde cada página cuenta una historia única y ofrece una experiencia interactiva para los usuarios.</center>
+    <h1>Aprendiendo nuevas Tecnologías</h1>
+
+    
+    <center>Actualmente estoy explorando tecnologías en las que confío tendrán un gran impacto a largo plazo.</center><br>
+    <center><img alt="" class="card-img " src="pub/unity2.webp"></center><div class="letras">
+    YucaTour VR es una experiencia en VR (Virtual Reality / Realidad Virtual), en el que a través de unas gafas VR, podrás explorar dos de las más hermosas zonas arqueológicas de Yucatán (Kabah y Uxmal), al igual que interactuar con los personajes y los carteles que te contarán una asombrosa leyenda.</div>
+   <center> <a href="https://gaspar-valdez.itch.io/yucatour-vr" class="boton">Ver enlace del proyecto</a></center>
 </section>
 
 <!-- Sobre Mí -->
 <section id="sobre-mi">
     <h2>Sobre Mí</h2>
+    <center>Bueno, en relación con mi experiencia académica, estoy dispuesto a aprender y mejorar mis habilidades en cualquier área que se necesite. Si tengo experiencia previa en el tema, puedo contribuir con nuevas perspectivas y enriquecer las propuestas desde ángulos diferentes. Mi objetivo es seguir desarrollándome y adaptándome constantemente para enfrentar cualquier desafío que surja.  </center>
     <!-- Aquí puedes agregar información sobre ti -->
 </section>
 
-<!-- Contacto -->
-<section id="contacto"><h2>Contacto</h2>
-    <p>¿Quieres contactarme? Puedes hacerlo de las siguientes maneras:</p>
-    <ul><center>
-        <a class="boton" href="tel:+5520446252">Llámame</a> <!-- Enlace para llamar -->
-        <a class="boton" href="22050075@alumno.utmetropolitana.edu.mx">correo electrónico (intitucional)</a><!-- Enlace para enviar un correo electrónico -->
-        <a class="boton" href="xvmxng@gmail.com">correo electrónico (personal)</a><!-- Enlace para enviar un correo electrónico -->
+<!-- Contacto --><section id="contacto" style="text-align: center;">
+    <h2>Contacto</h2>
+    <center>
+    <div class="card-pokemon">
+        <div class="card-body">
+            <img alt="" class="card-img" src="pub/javi.jpg">
+            <h3 class="card-title py-2">Javier Pool Rodríguez</h3>
+            <p class="card-text">Desarrollador de Entornos Virtuales y Negocios Digitales</p>
+            <!--<p class="socials">
+                <i class="bi bi-twitter text-black"></i>
+                <i class="bi bi-facebook text-black"></i>
+                <i class="bi bi-linkedin text-black"></i>
+                <i class="bi bi-instagram text-black"></i>
+            </p>-->
+            <p>¿Quieres contactarme? Puedes hacerlo de las siguientes maneras:</p>
+            <ul>
+                <a class="boton" href="mailto:22050075@alumno.utmetropolitana.edu.mx" target="_blank" rel="noopener noreferrer" role="link" class="inline-flex items-center justify-center gap-2 px-4 py-1 text-gray-800 transition bg-gray-100 border border-gray-300 rounded-full dark:bg-gray-800 dark:border-gray-600 dark:text-white focus-visible:ring-yellow-500/80 text-md hover:bg-gray-900 hover:border-gray-700 group max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black">
+                    <svg class="size-4 md:size-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5"></path>
+                        <path d="M3 6l9 6l9 -6"></path>
+                        <path d="M15 18h6"></path>
+                        <path d="M18 15l3 3l-3 3"></path>
+                    </svg>correo electrónico (intitucional)
+                </a>
+                <a class="boton" href="mailto:xvmxng@gmail.com" target="_blank" rel="noopener noreferrer" role="link" class="inline-flex items-center justify-center gap-2 px-4 py-1 text-gray-800 transition bg-gray-100 border border-gray-300 rounded-full dark:bg-gray-800 dark:border-gray-600 dark:text-white focus-visible:ring-yellow-500/80 text-md hover:bg-gray-900 hover:border-gray-700 group max-w-fit hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black">
+                    <svg class="size-4 md:size-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5"></path>
+                        <path d="M3 6l9 6l9 -6"></path>
+                        <path d="M15 18h6"></path>
+                        <path d="M18 15l3 3l-3 3"></path>
+                    </svg>correo electrónico (personal)
+                </a>
+            </ul>
+        </div>
+    </div>
     </center>
-    </ul>
+   
+          
+
+
+  
+    
 </section>
 </div>
 
